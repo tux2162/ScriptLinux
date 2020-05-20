@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ "$#" -eq  "2" ]
+then
+	echo "$1 $2" >> hosts
+	echo "{OK}=> $1 $2"		 
+else
+	echo "ERROR SYNTAX: ex: 127.0.0.1 localhost"
+fi
